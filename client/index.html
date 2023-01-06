@@ -37,14 +37,21 @@
   <body>
     <div id="app">
       <div class="form-container gap-container">
-        <div class="form-wrapper fpy-40">
-          <div class="form-box">
+        <div class="form-wrapper flex-css-row-start fpy-30">
+          <div class="select-box fmr-10">
+            <select id="selectBox">
+              <option value="1">GET</option>
+              <option value="2">EDIT</option>
+              <option value="3">VARIATIONS</option>
+            </select>
+          </div>
+          <div class="form-box flex-top-row-start">
             <form class="flex-css-row" id="formBox">
               <textarea
                 name="prompt"
                 cols="1"
                 rows="1"
-                placeholder="Ask anything..."
+                placeholder="Search anything..."
                 id="inputBox"
               ></textarea>
               <button type="submit">
@@ -55,7 +62,7 @@
         </div>
       </div>
       <div class="gallery-container gap-container">
-        <div class="gallery-box flex-css-row-start-wrap">
+        <div class="gallery-box flex-css-row-start-wrap" id="galleryBox">
           <!-- <div class="box">
             <div class="img-box">
               <img
@@ -64,6 +71,27 @@
               />
             </div>
           </div> -->
+        </div>
+      </div>
+      <div class="loading-container gap-container">
+        <div class="loading-box flex-css">
+          <div class="loader fd-none">
+            <img src="./assets/images/spinner.gif" alt="spinner" />
+          </div>
+          <div class="note">
+            <div class="list flex-top-row-start">
+              <h1 class="flex-css-end">GET :</h1>
+              <p>Create/Get images using text prompt</p>
+            </div>
+            <div class="list flex-top-row-start">
+              <h1 class="flex-css-end">EDIT :</h1>
+              <p>Upload your image and write on prompt what to edit</p>
+            </div>
+            <div class="list flex-top-row-start">
+              <h1 class="flex-css-end">VARIATIONS :</h1>
+              <p>Upload you image and get similar images like that</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

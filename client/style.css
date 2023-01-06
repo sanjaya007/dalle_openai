@@ -21,10 +21,93 @@ body {
   margin-right: auto;
 }
 
+.fd-none {
+  display: none;
+}
+
 #app {
   width: 100vw;
   min-height: 100vh;
   background: #121212;
+}
+
+.form-container .select-box {
+  background: linear-gradient(to right, #1a6dff, #c822ff);
+  padding: 1px;
+  cursor: pointer;
+}
+
+.form-container .select-box select {
+  outline: none;
+  border: none;
+  padding: 14px 10px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-size: 14px;
+  height: 55px;
+  max-height: 55px;
+  cursor: pointer;
+}
+
+.form-container .select-box select option {
+  padding: 10px;
+}
+
+.form-container .form-box {
+  background: linear-gradient(to right, #1a6dff, #c822ff, #1a6dff, #c822ff);
+  padding: 1px;
+  width: 100%;
+}
+
+.form-container form {
+  width: 100%;
+  padding: 6px;
+  background: #1f1f1f;
+  gap: 10px;
+}
+
+.form-container .form-box form textarea {
+  border: none;
+  outline: none;
+  /* min-width: calc(100% - 40px - 20px); */
+  width: 100%;
+  min-height: 42px;
+  max-height: 100px;
+  color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  background: transparent;
+  resize: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.form-container .form-box form button {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.form-container .form-box form button:active {
+  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+  -moz-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  -o-transform: scale(0.97);
+}
+
+.form-container .form-box form button img {
+  height: 40px;
 }
 
 .gallery-container .gallery-box {
@@ -57,59 +140,35 @@ body {
   width: 100%;
 }
 
-.form-container .form-box {
-  background: linear-gradient(to right, #1a6dff, #c822ff, #1a6dff, #c822ff);
-  padding: 1px;
+.loading-container .loading-box {
+  min-height: calc(100vh - 117px);
 }
 
-.form-container form {
-  width: 100%;
-  padding: 10px;
-  background: #1f1f1f;
-  gap: 10px;
+.loading-container .loading-box .loader img {
+  height: 60px;
 }
 
-.form-container .form-box form textarea {
-  border: none;
-  outline: none;
-  min-width: calc(100% - 40px - 20px);
-  width: 100%;
-  min-height: 42px;
-  max-height: 100px;
-  color: #fff;
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 18px;
-  padding: 10px;
-  background: transparent;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+.loading-container .loading-box .note {
+  width: 300px;
+  max-width: 300px;
 }
 
-.form-container .form-box form button {
-  outline: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+.loading-container .loading-box .note .list {
+  margin-bottom: 6px;
 }
 
-.form-container .form-box form button:active {
-  transform: scale(0.97);
-  -webkit-transform: scale(0.97);
-  -moz-transform: scale(0.97);
-  -ms-transform: scale(0.97);
-  -o-transform: scale(0.97);
+.loading-container .loading-box .note .list h1 {
+  font-size: 16px;
+  color: #525252;
+  margin-right: 10px;
+  min-width: 90px;
+  white-space: nowrap;
 }
 
-.form-container .form-box form button img {
-  height: 40px;
+.loading-container .loading-box .note .list p {
+  font-size: 14px;
+  color: #525252;
+  font-weight: 600;
 }
 
 /* responsive  */

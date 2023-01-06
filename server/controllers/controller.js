@@ -1,10 +1,6 @@
 import { openai } from "../openai.js";
 
 const getData = async (req, res) => {
-  const prompt = "a white cat eating icecream";
-
-  console.log(response["data"]);
-
   res.status(200).send({
     message: "You are using AI",
   });
@@ -17,7 +13,7 @@ const postData = async (req, res) => {
     const response = await openai.createImage({
       prompt: prompt,
       n: 10,
-      size: "1024x1024",
+      size: "256x256",
     });
 
     res.status(200).send({
