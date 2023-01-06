@@ -60,6 +60,8 @@ $(window).on("load", function () {
     previousSearch = prompt_data.prompt;
     // form.reset();
 
+    console.log($("#selectBox").val());
+
     getImages();
   }
 

@@ -196,7 +196,22 @@ body {
 }
 
 @media (max-width: 500px) {
+  .form-container .form-wrapper {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  .form-container .select-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .form-container .select-box select {
+    width: 100%;
+  }
   .gallery-container .gallery-box .box {
     width: calc(100% / 1 - 0px);
+  }
+  .loading-container .loading-box {
+    min-height: calc(100vh - 164px);
   }
 }
