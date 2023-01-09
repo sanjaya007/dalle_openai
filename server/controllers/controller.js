@@ -9,6 +9,7 @@ const getData = async (req, res) => {
 const postData = async (req, res) => {
   try {
     const prompt = req.body.prompt;
+    console.log(prompt);
 
     const response = await openai.createImage({
       prompt: prompt,
@@ -25,4 +26,22 @@ const postData = async (req, res) => {
   }
 };
 
-export { getData, postData };
+const editData = async (req, res) => {
+  try {
+    console.log(req.files);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ error });
+  }
+};
+
+const variationData = async (req, res) => {
+  try {
+    console.log(req.files);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ error });
+  }
+};
+
+export { getData, postData, editData, variationData };

@@ -110,11 +110,12 @@ body {
   height: 40px;
 }
 
-.gallery-container .gallery-box {
+/* gallery  */
+.gallery-container .gallery-box .view-box {
   gap: 10px;
 }
 
-.gallery-container .gallery-box .box {
+.gallery-container .gallery-box .view-box .box {
   width: calc(100% / 4 - 8px);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -124,7 +125,7 @@ body {
   -o-transition: all 0.3s ease;
 }
 
-.gallery-container .gallery-box .box:hover {
+.gallery-container .gallery-box .view-box .box:hover {
   transform: scale(0.97);
   -webkit-transform: scale(0.97);
   -moz-transform: scale(0.97);
@@ -132,43 +133,26 @@ body {
   -o-transform: scale(0.97);
 }
 
-.gallery-container .gallery-box .box .img-box {
+.gallery-container .gallery-box .view-box .box .img-box {
   width: 100%;
 }
 
-.gallery-container .gallery-box .box .img-box img {
+.gallery-container .gallery-box .view-box .box .img-box img {
   width: 100%;
 }
 
+/* result  */
+.result-container .result-box {
+  min-height: calc(100vh - 117px);
+}
+
+/* loading  */
 .loading-container .loading-box {
   min-height: calc(100vh - 117px);
 }
 
 .loading-container .loading-box .loader img {
   height: 60px;
-}
-
-.loading-container .loading-box .note {
-  width: 300px;
-  max-width: 300px;
-}
-
-.loading-container .loading-box .note .list {
-  margin-bottom: 6px;
-}
-
-.loading-container .loading-box .note .list h1 {
-  font-size: 16px;
-  color: #525252;
-  margin-right: 10px;
-  min-width: 90px;
-  white-space: nowrap;
-}
-
-.loading-container .loading-box .note .list p {
-  font-size: 14px;
-  color: #525252;
-  font-weight: 600;
 }
 
 /* responsive  */
@@ -180,7 +164,7 @@ body {
 }
 
 @media (max-width: 1023px) {
-  .gallery-container .gallery-box .box {
+  .gallery-container .gallery-box .view-box .box {
     width: calc(100% / 3 - 7px);
   }
 }
@@ -190,7 +174,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .gallery-container .gallery-box .box {
+  .gallery-container .gallery-box .view-box .box {
     width: calc(100% / 2 - 5px);
   }
 }
@@ -208,7 +192,7 @@ body {
   .form-container .select-box select {
     width: 100%;
   }
-  .gallery-container .gallery-box .box {
+  .gallery-container .gallery-box .view-box .box {
     width: calc(100% / 1 - 0px);
   }
   .loading-container .loading-box {

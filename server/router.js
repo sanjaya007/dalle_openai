@@ -1,5 +1,10 @@
 import express from "express";
-import { getData, postData } from "./controllers/controller.js";
+import {
+  getData,
+  postData,
+  editData,
+  variationData,
+} from "./controllers/controller.js";
 
 const router = express.Router();
 
@@ -7,6 +12,8 @@ const router = express.Router();
 router.get("/", getData);
 
 // post
-router.post("/", postData);
+router.post("/get", postData);
+router.post("/edit", editData);
+router.post("/variation", variationData);
 
 export default router;

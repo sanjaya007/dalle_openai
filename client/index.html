@@ -26,6 +26,8 @@
     />
     <!-- custom css  -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./get.css" />
+    <link rel="stylesheet" href="./edit.css" />
     <!-- jquery  -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -60,47 +62,64 @@
           </div>
         </div>
       </div>
-      <div class="gallery-container gap-container">
-        <div class="gallery-box flex-css-row-start-wrap" id="galleryBox">
-          <!-- <div class="box">
-            <div class="img-box">
-              <img
-                src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-OHckDQAn9F7p3LjLRPiP6BEF/user-6NyVItkADdXw52o6brYfgoT5/img-7HNE1XL86MMOLcBlnpdJGBTQ.png?st=2023-01-05T12%3A25%3A29Z&se=2023-01-05T14%3A25%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-01-05T11%3A48%3A31Z&ske=2023-01-06T11%3A48%3A31Z&sks=b&skv=2021-08-06&sig=GzD/feGsmrHEKFeeLA08XohhKfxP0yeNvGouNBzbp18%3D"
-                alt="searched"
-              />
+
+      <div
+        class="get-container gallery-container result-container gap-container"
+        id="getContainer"
+        style="display: none"
+      >
+        <div class="get-box gallery-box result-box" id="getBox">
+          <div class="view-box flex-css-row-start-wrap" id="getViewBox"></div>
+          <div class="note-box flex-css" id="getDefaultBox">
+            <div class="list-box">
+              <div class="list flex-top-row-start">
+                <h1 class="flex-css-end">GET :</h1>
+                <p>Create/Get images using text prompt</p>
+              </div>
+              <div class="list flex-top-row-start">
+                <h1 class="flex-css-end">EDIT :</h1>
+                <p>Upload your image and write on prompt what to edit</p>
+              </div>
+              <div class="list flex-top-row-start">
+                <h1 class="flex-css-end">VARIATIONS :</h1>
+                <p>Upload you image and get similar images like that</p>
+              </div>
+              <div class="list flex-top-row-start">
+                <h1 class="flex-css-end">SHORTCUTS :</h1>
+                <p>
+                  (SHIFT + ENTER) to write on another line <br />
+                  (CTRL + A) to undo previous search
+                </p>
+              </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
-      <div class="loading-container gap-container">
+
+      <div
+        class="edit-container gallery-container result-container gap-container"
+        id="editContainer"
+      >
+        <div class="edit-box gallery-box result-box" id="editBox">
+          <div class="view-box flex-css-row-start-wrap" id="editViewBox"></div>
+        </div>
+      </div>
+
+      <div
+        class="loading-container gap-container fd-none"
+        id="loadingContainer"
+      >
         <div class="loading-box flex-css">
-          <div class="loader fd-none">
+          <div class="loader">
             <img src="./assets/images/spinner.gif" alt="spinner" />
-          </div>
-          <div class="note">
-            <div class="list flex-top-row-start">
-              <h1 class="flex-css-end">GET :</h1>
-              <p>Create/Get images using text prompt</p>
-            </div>
-            <div class="list flex-top-row-start">
-              <h1 class="flex-css-end">EDIT :</h1>
-              <p>Upload your image and write on prompt what to edit</p>
-            </div>
-            <div class="list flex-top-row-start">
-              <h1 class="flex-css-end">VARIATIONS :</h1>
-              <p>Upload you image and get similar images like that</p>
-            </div>
-            <div class="list flex-top-row-start">
-              <h1 class="flex-css-end">SHORTCUTS :</h1>
-              <p>
-                (SHIFT + ENTER) to write on another line <br />
-                (CTRL + A) to undo previous search
-              </p>
-            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- lazy load  -->
+    <!-- <script type="text/javascript" src="jquery.lazy.min.js"></script> -->
+    <!-- custom  -->
     <script type="module" src="./script.js"></script>
   </body>
 </html>
